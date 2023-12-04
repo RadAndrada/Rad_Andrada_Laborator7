@@ -31,6 +31,5 @@ namespace Rad_Andrada_Laborator7
                 });
             }
         }
-
     }
 }
