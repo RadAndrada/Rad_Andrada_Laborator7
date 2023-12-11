@@ -14,9 +14,16 @@ namespace Rad_Andrada_Laborator7
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            .ConfigureEssentials(essentials =>
+             {
+                 essentials.UseMapServiceToken("UtTKzyc8ftyYUerAsNMO~OL8i3n_Z7l6mXSx_DMIfRQ~AmR0CyamCFntRN63PRbnOwUCtDyAtUf3hkdYNhHlNCzgd3DJDottAid5kMCGjYdt");
+             });
 
+            return builder.Build();
+        }
+    }
 #if DEBUG
-    		builder.Logging.AddDebug();
+    builder.Logging.AddDebug();
 #endif
 
             return builder.Build();
